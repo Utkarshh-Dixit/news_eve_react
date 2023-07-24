@@ -64,7 +64,7 @@ export class News extends Component {
         }
   render() {
     return (
-      <div className='container my-3'>
+      <div className='container my-3' >
         <h2 className='text-center' style={{ padding:"25px 25px"}}>NewsEve - Top headlines</h2>
         <h5>Page: {this.state.page}</h5>
         {this.state.loading && <Spinner/>}
