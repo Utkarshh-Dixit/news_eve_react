@@ -64,7 +64,7 @@ const News =(props)=> {
         {/* <h5>Page: {this.state.page}</h5> */}
         {/* {this.state.loading && <Spinner/>} */}
         <InfiniteScroll
-          dataLength={articles.length}
+          dataLength={articles.length !== 0  ? articles.length : 0}
           next={fetchMoreData}
           hasMore={articles.length !== totalResults}
           loader={page+1 > Math.ceil(totalResults/props.pageSize) ? "":<h4>Loading...</h4>}
