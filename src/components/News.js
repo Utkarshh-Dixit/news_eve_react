@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 
 const News =(props)=> {
    const [articles, setarticles] = useState([])
+   // eslint-disable-next-line 
    const [loading, setloading] = useState(false)
    const [page, setpage] = useState(1)
    const [totalResults, settotalResults] = useState(0)
@@ -26,9 +27,9 @@ const News =(props)=> {
         }
 
         useEffect(() => {
-          //eslint-disable-next-line
           updateNews();
           
+          // eslint-disable-next-line
         }, [])
         
         
